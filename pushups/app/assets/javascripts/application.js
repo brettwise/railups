@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require modernizr/modernizr.js
+//= require fullpage.js/jquery.fullPage.js
+//= require jquery.slimscroll/jquery.slimscroll.js
+
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        verticalCentered: true,
+        sectionsColor: ['#111111'],
+        css3: true
+    });
+});
