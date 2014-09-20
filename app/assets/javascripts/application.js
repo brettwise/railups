@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 //= require modernizr/modernizr.js
 //= require fullpage.js/jquery.fullPage.js
