@@ -1,6 +1,13 @@
 <div id="fullpage">
     <div class="section" id="section0">
-        <button onclick="location.href='/accounts/login/'" class="button tiny" id="sign-in-button">Login</button>
+        <% if current_user %>
+            <!-- <button onclick="location.href='/logout'" class="button tiny" id="sign-in-button">Logout</button> -->
+            <h1><%= link_to "Logout", logout_path %></h1>
+            <h1><%= current_user.name %></h1>
+        <% else %>
+            <button onclick="location.href='/accounts/login/'" class="button tiny" id="sign-in-button">Login</button>
+            <h1><%= link_to "Login", signin_path %></h1>
+        <% end %>
         <div class="tagline">
             <h1>because sitting is the new smoking</h1>
         </div>
